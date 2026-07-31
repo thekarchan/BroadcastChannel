@@ -30,6 +30,7 @@ const adapterProvider = (process.env.HOME === '/dev/shm/home' && process.env.TMP
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://broadcast.hellokar.org',
   output: 'server',
   adapter: providers[adapterProvider] || providers.node,
   integrations: [
